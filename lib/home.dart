@@ -80,53 +80,48 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-					Container( 
-						padding: EdgeInsets.only(bottom: 45.0),
-						child: Text(
-							"VClassify",
-							style: TextStyle(fontSize: 45),
-						)
-					),
-					Text(
-						"Select the model",
-						style: TextStyle(fontSize: 15),
-					),
-					Container(
-						width : 175,
-						height: 50,
-						margin: EdgeInsets.all(10),
-						child: RaisedButton(
-						child: const Text(ssd),
-						onPressed: () => onSelect(ssd),
-						)
-					),
-					Container(
-						width : 175,
-						height: 50,
-						margin: EdgeInsets.all(10),
-						child: RaisedButton(
-						child: const Text(yolo),
-						onPressed: () => onSelect(yolo),
-						)
-					),
-					Container(
-						width : 175,
-						height: 50,
-						margin: EdgeInsets.all(10),
-						child: RaisedButton(
-						child: const Text(mobilenet),
-						onPressed: () => onSelect(mobilenet),
-						)
-					),
-					Container(
-						width : 175,
-						height: 50,
-						margin: EdgeInsets.all(10),
-						child: RaisedButton(
-						child: const Text(posenet),
-						onPressed: () => onSelect(posenet),
-						)
-					),
+                  Container(
+                      padding: EdgeInsets.only(bottom: 45.0),
+                      child: Text(
+                        "VClassify",
+                        style: TextStyle(fontSize: 45),
+                      )),
+                  Text(
+                    "Select the model",
+                    style: TextStyle(fontSize: 15),
+                  ),
+                  Container(
+                      width: 175,
+                      height: 50,
+                      margin: EdgeInsets.all(10),
+                      child: ElevatedButton(
+                        child: const Text(ssd),
+                        onPressed: () => onSelect(ssd),
+                      )),
+                  Container(
+                      width: 175,
+                      height: 50,
+                      margin: EdgeInsets.all(10),
+                      child: ElevatedButton(
+                        child: const Text(yolo),
+                        onPressed: () => onSelect(yolo),
+                      )),
+                  Container(
+                      width: 175,
+                      height: 50,
+                      margin: EdgeInsets.all(10),
+                      child: ElevatedButton(
+                        child: const Text(mobilenet),
+                        onPressed: () => onSelect(mobilenet),
+                      )),
+                  Container(
+                      width: 175,
+                      height: 50,
+                      margin: EdgeInsets.all(10),
+                      child: ElevatedButton(
+                        child: const Text(posenet),
+                        onPressed: () => onSelect(posenet),
+                      )),
                 ],
               ),
             )
@@ -145,8 +140,7 @@ class _HomePageState extends State<HomePage> {
                     screen.width,
                     _model),
               ],
-        ),
+            ),
     );
   }
 }
-
